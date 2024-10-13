@@ -17,7 +17,6 @@ To install StringExtractor, ensure you have Python installed on your system (ver
 
 ## bash:
 git clone https://github.com/<username>/StringExtractor.git
-cd StringExtractor
 
 ## Usage
 - Run the Program:
