@@ -16,7 +16,7 @@ StringExtractor is a Python application designed to extract readable ASCII and U
 To install StringExtractor, ensure you have Python installed on your system (version 3.6 or higher). Then, clone the repository and navigate to the project folder:
 
 ## bash:
-git clone https://github.com/<username>/StringExtractor.git
+git clone https://github.com/b0yx/StringExtractor.git
 
 ## Usage
 - Run the Program:
