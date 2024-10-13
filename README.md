@@ -35,11 +35,11 @@ git clone https://github.com/b0yx/StringExtractor.git
 - Run the Program:
   python StringExtractor.py
 - Select an Option:
-  1. Extract Strings from File
-  2. Extract Strings from Directory
-  3. Set Minimum String Length (Current: 3)
-  4. Save Extracted Strings to File
-  5. Exit
+  1- Extract Strings from File
+  2- Extract Strings from Directory
+  3- Set Minimum String Length (Current: 3)
+  4- Save Extracted Strings to File
+  5- Exit
   
 - Enter the number corresponding to your choice and press Enter.
 
