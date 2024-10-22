@@ -1,67 +1,90 @@
-# StringExtractor
+StringExtractor
+StringExtractor is a Python application designed to extract readable ASCII and Unicode strings from files or directories. This tool is particularly useful for data recovery, malware analysis, reverse engineering, or any scenario where you need to retrieve human-readable text from binary files.
 
-StringExtractor is a Python application designed to extract readable ASCII and Unicode strings from files or directories. This tool is particularly useful for data recovery, malware analysis, or any situation where you need to retrieve text data from binary files.
+Table of Contents
+Features
+Installation
+Usage
+Extract Strings from a File
+Extract Strings from a Directory
+Set Minimum String Length
+Save Extracted Strings
+Features
+StringExtractor offers several powerful features to aid in extracting readable text from binary files or entire directories:
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
+Extract ASCII and Unicode Strings
 
-## Features
-The StringExtractor program offers several key features that make it useful for extracting human-readable strings from binary files or entire directories. Here are its main features:
-  1. Extract ASCII and Unicode Strings:
-     The program can extract both ASCII (standard text) and Unicode (UTF-16) strings from binary files, making it versatile for analyzing files that may       contain hidden or embedded text.
-  2. Extract Strings from Individual Files:
-     Users can input the path of a specific file to extract readable text, making it useful for examining binary data, such as executables, compiled           programs, or other binary formats.
-  3. Batch Extraction from a Directory:
-     The program can recursively extract strings from all files in a directory, enabling the analysis of multiple files at once, which is particularly         helpful for bulk analysis or malware research.
-  4. Configurable Minimum String Length:
-     Users can set the minimum string length for extraction, filtering out shorter sequences and focusing on more meaningful content. This feature             enhances control over the type of output generated.
-  5. Save Extracted Strings to a File:
-      Users can save the extracted strings to an external text file for further analysis or documentation, allowing for easy export and archiving of     
-      results.
-  6. User-Friendly Console Interface:
-      The program has an intuitive, menu-driven console interface, making it easy to navigate and use without needing to modify code or handle complex           command-line arguments.
-     
-  These features make the program a simple yet powerful tool for analyzing binary files or directories for hidden or readable text, useful in tasks like reverse engineering, digital forensics, or general file inspection.
+The tool can extract both ASCII (standard text) and Unicode (UTF-16) strings from binary files, making it versatile for analyzing files that may contain hidden or embedded text.
+Extract Strings from Individual Files
 
-## Installation
-To install StringExtractor, ensure you have Python installed on your system (version 3.6 or higher). Then, clone the repository and navigate to the project folder:
+Users can specify a file path to extract readable text. This is useful for examining binary files such as executables, compiled programs, or other binary formats.
+Batch Extraction from Directories
 
-## bash:
+Recursively extract strings from all files within a directory. This feature enables the bulk analysis of multiple files, making it particularly helpful for malware research or file system investigations.
+Configurable Minimum String Length
+
+Users can set the minimum string length for extraction. This allows for filtering out short, irrelevant strings, focusing on meaningful content.
+Save Extracted Strings to a File
+
+Save extracted strings to an external file for further analysis or documentation. This feature allows easy exporting and archiving of results for later use.
+User-Friendly Console Interface
+
+A menu-driven console interface ensures easy navigation and use, even for users unfamiliar with command-line arguments or Python code.
+These features make StringExtractor an invaluable tool for tasks such as reverse engineering, digital forensics, malware analysis, and general file inspection.
+
+Installation
+To install StringExtractor, ensure that Python 3.6 or higher is installed on your system. Then, follow these steps:
+
+Clone the repository:
+
+bash
+Copy code
 git clone https://github.com/b0yx/StringExtractor.git
+Navigate to the project folder:
 
-## Usage
-- Run the Program:
-  python StringExtractor.py
-- Select an Option:
-  1- Extract Strings from File
-  2- Extract Strings from Directory
-  3- Set Minimum String Length (Current: 3)
-  4- Save Extracted Strings to File
-  5- Exit
-  
-- Enter the number corresponding to your choice and press Enter.
+bash
+Copy code
+cd StringExtractor
+Usage
+Run the program by executing the following command:
 
-- Extracting Strings:
-    * Extract From a File:
-        Choose option 1.
-        Input the full file path with name of the file (e.g., C:\path\to\your\file.bin).
-        The extracted ASCII and Unicode strings will be displayed.
+bash
+Copy code
+python StringExtractor.py
+Upon running, you'll be presented with a menu of options:
 
-    * From a Directory:
-        Choose option 2.
-        Provide the directory path (e.g., C:\path\to\your\directory).
-        The program will extract and display strings from each file in the directory.
-  Set Minimum String Length:
+bash
+Copy code
+1. Extract Strings from File
+2. Extract Strings from Directory
+3. Set Minimum String Length (Current: 3)
+4. Save Extracted Strings to File
+5. Exit
+Extract Strings from a File
+Choose option 1.
+Input the full file path (e.g., C:\path\to\your\file.bin).
+The tool will display the extracted ASCII and Unicode strings from the file.
+Extract Strings from a Directory
+Choose option 2.
+Provide the directory path (e.g., C:\path\to\your\directory).
+The program will extract strings from all files within the directory and display the results.
+Set Minimum String Length
+Choose option 3.
+Enter a new minimum string length (the default is 3). This allows you to filter the strings based on their length.
+Save Extracted Strings
+Choose option 4.
+Specify whether you want to extract strings from a file or directory.
+Provide the file or directory path.
+Enter the output file name where the extracted strings will be saved.
+This StringExtractor tool is straightforward yet highly effective for binary analysis. Whether you're performing malware analysis or simply exploring file contents, this tool is designed to streamline the process.
 
-- Choose option 3.
-    Enter a new minimum length for string extraction or press Enter to keep the default (currently set to 3).
-    Save Extracted Strings:
+Contributing
+We welcome contributions! If you'd like to contribute to the project, please follow these steps:
 
-- Choose option 4.
-    Select whether to extract from a directory or a single file.
-    Provide the necessary paths.
-    Specify the output file name where the extracted strings will be saved.
-        
-        
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Commit your changes (git commit -m "Add a new feature").
+Push to the branch (git push origin feature-branch).
+Open a pull request describing your changes.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
